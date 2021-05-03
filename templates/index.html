@@ -1,0 +1,841 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Pondicherry Fashion Models</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.ico')}}">
+
+        <!--Google Fonts link-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/slick.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/slick-theme.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/fonticons.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/bootsnav.css')}}">
+
+
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="{{url_for('static',filename='assets/css/plugins.css')}}" />-->
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+        <!--<link rel="stylesheet" href="{{url_for('static',filename='assets/css/colors/maron.css')}}">-->
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{{url_for('static',filename='assets/css/responsive.css')}}" />
+
+        <script src="{{url_for('static',filename='assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+
+        <!-- Preloader -->
+
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                    <div class="object"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--End off Preloader -->
+
+
+        <div class="culmn">
+            <!--Home page style-->
+
+
+            <nav class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase">
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <form method="POST" action="/search">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+                <div class="container">    
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="">
+
+                            <img src="{{url_for('static',filename='assets/images/')}}" class="logo logo-display" alt="">
+                            <img src="{{url_for('static',filename='assets/images/logo2.png')}}" class="logo logo-scrolled" alt="">
+
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+                            <li><a href="/tabel">Participants</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>  
+
+
+            </nav>
+
+
+            <!--Home Sections-->
+
+
+            <section id="home" class="home bg-mega">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home text-center">
+                            <div class="home_text">
+                                <h4 class="text-white text-uppercase">turn your dream into reality</h4>
+                                <h1 class="text-white text-uppercase">we are creating professional models</h1>
+
+                                <div class="separator"></div>
+
+                                <h5 class=" text-uppercase text-white"><em>today is the your opportunity to built the tomorrow you want.</em></h5>
+                                <div class="form-group">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <a href="/reg" class="btn btn-default" style="color:white; border-color:#f5f5f5;">REGISTER</i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+
+
+            <!--About Sections-->
+            <section id="about" class="feature p-top-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_feature">
+
+                            <div class="col-md-6 m-top-120">
+                                <!-- Head Title -->
+                                <div class="head_title">
+                                    <h2>About</h2>
+                                    <h5><em>Pondicherry Fashion Models brings the waves to somewhere so far,
+                                            with beautiful & elegant.</em></h5>
+                                    <div class="separator_left"></div>
+                                </div><!-- End off Head Title -->
+
+                                <div class="feature_content wow fadeIn m-top-40">
+                                    <p>I am the CEO of Pondicherry Fashion Models agency, We are executing the several
+                                    services for modeling industry, which usually include fashion events, collabration
+                                        shoots and promoting the fashion related products and services.</p>
+
+                                    <p>Our agency motive is to creating and training the Models, Photographers, Makeup artists
+                                        and also we will discover their passion. We teach them how to strat the modeling career.
+                                        We regularly organizing shoots for building their modeling portfolio. We are focusing to
+                                        place our models in Advertisements, models casting and serial casting opportunties.</p>
+
+                                    <div class="feature_btns m-top-30">
+                                        <a href="#contact" class="btn btn-default text-uppercase">Contact us <i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature_photo wow fadeIn sm-m-top-40">
+                                    <div class="photo_border"></div>
+                                    <div class="feature_img">
+                                        <img src="{{url_for('static',filename='assets/images/yuvi.jpg')}}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+                <br />
+                <br />
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
+
+                <div class="container">
+                    <div class="row">
+                        <div class="main_counter text-center">
+                            <div class="col-md-3">
+                                <div class="counter_item">
+                                    <h2 class="statistic-counter"><em> 29 </em></h2>
+                                    <div class="separator_small"></div>
+                                    <h5>Projects Finished</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="counter_item sm-m-top-40">
+                                    <h2 class="statistic-counter"><em> 65 </em></h2>
+                                    <div class="separator_small"></div>
+                                    <h5>Happy Clients</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="counter_item sm-m-top-40">
+                                    <h2 class="statistic-counter"><em>875</em></h2>
+                                    <div class="separator_small"></div>
+                                    <h5>Happy Customer</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="counter_item sm-m-top-40">
+                                    <h2 class="statistic-counter"><em> 2 </em> </h2>
+                                    <div class="separator_small"></div>
+                                    <h5>Number of Years</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+
+                <br />
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
+                <br />
+
+                <!--Our Work Section-->
+                <div class="container">
+                    <div class="row">
+                        <div class="main_work">
+
+                            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
+                                <div class="work_item">
+                                    <div class="row">
+                                        <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
+                                            <div class="work_item_img">
+                                                <img src="{{url_for('static',filename='assets/images/pfm3.jpg')}}" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
+                                            <div class="work_item_details m-top-80 sm-m-top-20">
+                                                <h4>Model</h4>
+                                                <div class="work_separator1"></div>
+                                                <p class="m-top-40 sm-m-top-10">We captures the best version of your Portfolio Shoots</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End off work-item -->
+
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <div class="work_item">
+                                    <div class="row">
+                                        <div class="col-md-7 col-sm-12 col-xs-12">
+                                            <div class="work_item_img sm-text-center sm-m-top-40">
+                                                <img src="{{url_for('static',filename='assets/images/pfm4.jpg')}}" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
+                                            <div class="work_item_details m-top-80 sm-m-top-20">
+                                                <h4>Photographer</h4>
+                                                <div class="work_separator2"></div>
+                                                <p class="m-top-40 sm-m-top-10">We gives Collobration Shoots in simple way to get with beautiful and elegent members</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End off work-item -->
+
+                            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
+                                <div class="work_item">
+                                    <div class="row">
+                                        <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
+                                            <div class="work_item_img sm-m-top-40">
+                                                <img src="{{url_for('static',filename='assets/images/pfm5.jpg')}}" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
+                                            <div class="work_item_details m-top-80 sm-m-top-20">
+                                                <h4>Makeup Artist</h4>
+                                                <div class="work_separator1"></div>
+                                                <p class="m-top-40 sm-m-top-10">We gives Collobration Shoots in simple way to get  with beautiful and elegent members</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End off work-item -->
+
+                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                <div class="work_item">
+                                    <div class="row">
+                                        <div class="col-md-7 col-sm-12 col-xs-12">
+                                            <div class="work_item_img sm-text-center sm-m-top-40">
+                                                <img src="{{url_for('static',filename='assets/images/pfm6.jpg')}}" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
+                                            <div class="work_item_details m-top-80 sm-m-top-20">
+                                                <h4>Costume Designer</h4>
+                                                <div class="work_separator2"></div>
+                                                <p class="m-top-40 sm-m-top-10">We gives Collobration Shoots in simple way to get  with beautiful and elegent members</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End off work-item -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <br />
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
+                <br />
+
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="service_content_area">
+                            <!-- Service LEFT SIDE -->
+                            <div class="col-md-4 service_left wow fadeInLeft">
+                                <!-- Service -->
+
+                                <div class="service_items">
+                                    <div class="row">
+
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-user-secret"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9">
+                                            <div class="text-left service_left_text">
+                                                <h4 class="main-color">Agency</h4>
+                                                <p>The agencies find work for models by presenting them to Designers, Photographers and Ad agencies. Agency is a company that represents fashion models, to work for the fashion industry.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end Single Service item -->
+
+                                <!-- Service -->
+                                <div class="service_items">
+                                    <div class="row">
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-diamond"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9">
+                                            <div class="text-left service_left_text">
+                                                <h4 class="main-color">Costume Designer</h4>
+                                                <p>Designer is the individual in charge of designing the clothing elements worn by model in a shoot or event.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end Single Service item -->
+
+                                <!-- Service -->
+                                <div class="service_items">
+                                    <div class="row">
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-camera-retro"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9">
+                                            <div class="text-left service_left_text">
+                                                <h4 class="main-color">Photographer</h4>
+                                                <p>Model Photographer is taking photographs of a model for the model's portfolio.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end Single Service item -->
+
+
+                            </div>
+                            <!-- /END Service LEFT -->
+
+                            <!-- PHONE IMAGE -->
+                            <div class="col-md-4 sm-m-top-40 sm-text-center">
+                                <div class="service-img wow bounceIn">
+                                    <img src="{{url_for('static',filename='assets/images/pfm2.png')}}" alt="Architect Img">
+                                </div>
+                            </div>
+
+                            <!-- Service RIGHT -->
+                            <div class="col-md-4 service_right wow fadeInRight sm-m-top-40" >
+
+                                <!-- Service -->
+                                <div class="service_items">
+                                    <div class="row">
+
+                                        <div class="col-xs-9">
+                                            <div class="service_right_text p-l-15 text-right">
+                                                <h4 class="main-color">Makeup Artist</h4>
+                                                <p>Responsible for applying makeup and styling hair for photoshoots to enhance models look.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-cut"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div> <!-- end Single Service item -->
+
+
+
+                                <!-- Service -->
+                                <div class="service_items">
+                                    <div class="row">
+
+                                        <div class="col-xs-9">
+                                            <div class="service_right_text p-l-15 text-right">
+                                                <h4 class="main-color">Promotion</h4>
+                                                <p>Their purpose is to increase customer awareness and chances to get brand ambassador with help of Promotion.</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-bullhorn"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div><!-- end Single Service item -->  
+
+                                <!-- Service -->
+                                <div class="service_items">
+                                    <div class="row">
+
+
+                                        <div class="col-xs-9">
+                                            <div class="service_right_text p-l-15 text-right">
+                                                <h4 class="main-color">Casting</h4>
+                                                <p>Model casting are an expected part of your journey to becoming a successful model.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- ICON -->
+                                        <div class="col-xs-3">
+                                            <div class="hexagon">
+                                                <div class="about-content">
+                                                    <span class="fa fa-id-card-o"></span>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!-- end Single Service item --> 
+
+
+                            </div><!-- /END Service RIGHT -->
+                        </div>
+                    </div> <!--End off row -->
+                </div>
+
+            </section> <!--End off About section -->
+
+
+
+            <!--Gallery Section-->
+            <section id="gallery" class="gallery margin-top-120 bg-grey">
+                <!-- Gallery container-->
+                <div class="container">
+                    <div class="row">
+                        <div class="main-gallery roomy-80">
+                            <div class="col-md-12">
+                                <div class="head_title text-left sm-text-center wow fadeInDown">
+                                    <h2>Our Gallery</h2>
+                                    <h5><em>Some our recent works is here. Discover them now!</em></h5>
+                                    <div class="separator_left"></div>
+                                </div>
+                            </div>
+
+
+                            <div style="clear: both;"></div>
+
+                            <div class="grid text-center">
+                                <div class="grid-item transition metal ium">
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p2.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-110">
+                                            <h4 class="text-white">PPL Events</h4>
+                                            <h5 class="text-white"><em>Prices</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p2.jpg')}}" class="popup-img text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+                                <div class="grid-item metalloid " >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p1.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-150">
+                                            <h4 class="text-white">PPL Events</h4>
+                                            <h5 class="text-white"><em>Speech</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p1.jpg')}}" class="popup-img text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+                                <div class="grid-item post-transition metal numberGreaterThan50">
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p3.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-50">
+                                            <h4 class="text-white">PPL Events</h4>
+                                            <h5 class="text-white"><em>Certificates</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p3.jpg')}}" class="popup-img text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+                                
+                                <div class="grid-item alkali ar" >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p4.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-50">
+                                            <h4 class="text-white">PPL Events</h4>
+                                            <h5 class="text-white"><em>Participant</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p4.jpg')}}" class="popup-img text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+                                <div class="grid-item post-transition metal ium" >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p5.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-150">
+                                            <h4 class="text-white">PPL Events</h4>
+                                            <h5 class="text-white"><em>Runner</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p5.jpg')}}" class="popup-img text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+
+                                <div class="grid-item metal ar" >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p6.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-110">
+                                            <h4 class="text-white">Tony & Guy Director</h4>
+                                            <h5 class="text-white"><em>Speech</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p6.jpg')}}" class="popup-img text-white m-top-40">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+
+                                <div class="grid-item post-transition metal ium" >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p8.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-150">
+                                            <h4 class="text-white">IMPH Event</h4>
+                                            <h5 class="text-white"><em>Speech</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p8.jpg')}}" class="popup-img text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+
+                                <div class="grid-item post-transition metal ium" >
+                                    <img alt="" src="{{url_for('static',filename='assets/images/p7.jpg')}}">
+                                    <div class="grid_hover_area text-center">
+                                        <div class="grid_hover_text m-top-150">
+                                            <h4 class="text-white">IMPH Event</h4>
+                                            <h5 class="text-white"><em>Top Five</em></h5>
+                                            <a href="{{url_for('static',filename='assets/images/p7.jpg')}}" class="popup-img text-white m-top-50">View Project <i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div><!-- End off grid Hover area -->
+                                </div><!-- End off grid item -->
+                            </div>
+
+                            <div style="clear: both;"></div>
+
+                        </div>
+                    </div>
+                </div><!-- Portfolio container end -->
+            </section><!-- End off portfolio section -->
+
+
+
+
+            <!--Testimonial Section-->
+            <section id="testimonial" class="testimonial fix roomy-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_testimonial text-center">
+
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/t.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Essensuals by Toni & Guy</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">Essensuals is about beautiful wearable hair for ladies and groomed and fresh looks for Men. Relaxed salons, and having the option of beauty treatments!! </p>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/j.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Jawed Habib</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">JH group of companies and associates is one of the leading hair & beauty salon and academy chain in India, Jawed Habib's name is synonymous with Style, Care and Awesomeness.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/r.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Rainbow Cool Tech</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">RCT, one of the top AC Service Agency in Pondicherry. End to end range of residential cooling solutions, featuring high quality and long life services.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/m.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Michael skate Academy</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">MSA is not just an academy; It's a family with a common goal of learning and achieving MSA conducts regular skating classes in Pondicherry.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/d.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Aaramalae Coffee Tea Sooda</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">Aaramalae are quite different in flavour and reasonable priced to the food. They are many healthy options available there. The place is built with crazy, imagination and recreation.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/p.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Zion Studio</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">Zion is specialized in wedding photography, fashion, corporate, family and senior portraits, Often traveling to your destination to capture the perfect.</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/c.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Subu's Cricket Academy</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">SCA is the well known and one of the prestigious academy in Pondicherry. To bring out young talents in Cricket and Athletic and its located in Palmyra Criket Ground</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="item testimonial_item">
+                                        <div class="col-sm-10 col-sm-offset-1">
+
+                                            <div class="test_authour">
+                                                <img class="img-circle" src="{{url_for('static',filename='assets/images/f.jpg')}}" alt="" />
+                                                <h6 class="m-top-20">Fituvfitness</h6>
+                                            </div>
+
+                                            <p class=" m-top-40">If there's anything we've learned, the strongest connection is community and from the very beginning was created to be more than just a gym. And also unstoppable in their pursuit to live focused, live fit and live free lives.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="fa fa-long-arrow-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <span class="slash">/</span>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="fa fa-long-arrow-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section>
+
+
+
+            <!--Models section-->
+
+
+
+            <!--Contact Us Section-->
+
+            <!--Company section-->
+
+            <section id="contact" class="company bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_company roomy-100 text-center">
+                            <h3 class="text-uppercase">Pondicherry Fashion Models</h3>
+                            <p>No.33, 9th cross - Krishna Nagar - Pondicherry - 605001.</p>
+                            <p>(+91) 96008 81215  -  pondicherryfashionmodels@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- scroll up-->
+            <div class="scrollup">
+                <a href="#"><i class="fa fa-chevron-up"></i></a>
+            </div><!-- End off scroll up -->
+
+
+            <footer id="footer" class="footer bg-mega">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_footer p-top-40 p-bottom-30">
+                            <div class="col-md-6 text-left sm-text-center">
+                                <p class="wow fadeInRight" data-wow-duration="1s">
+                                    Designed and Developed
+                                    <a target="_blank" href="http://chandruramachandiran.pythonanywhere.com"><i class="fa fa-heart"></i></a>
+                                    by 
+                                    <a target="_blank" href="http://chandruramachandiran.pythonanywhere.com">Auro Creation</a>
+                                    2021.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-right sm-text-center sm-m-top-20">
+                                <ul class="list-inline">
+                                    <li><a href="https://m.facebook.com/pondicherry_fashionmodels-102238884913682/?ref=bookmarks">Facebook</a></li>
+                                    <li><a href="https://twitter.com/PFMevent?s=09">Twitter</a></li>
+                                    <li><a href="https://instagram.com/pondicherry_fashionmodels?igshid=mzzcfh3msunv">Instagram</a></li>
+                                    <li><a href="https://www.linkedin.com/in/pondicherry-fashion-models-24a411208/">Linkedin</a></li>
+                                    <li><a href="https://youtube.com/channel/UCN6ovIwCckpmmuOH0jAuQ7w">YouTube</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JS includes -->
+
+        <script src="{{url_for('static',filename='assets/js/vendor/jquery-1.11.2.min.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/vendor/bootstrap.min.js')}}"></script>
+
+        <script src="{{url_for('static',filename='assets/js/isotope.min.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/jquery.magnific-popup.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/jquery.easing.1.3.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/slick.min.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/jquery.collapse.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/bootsnav.js')}}"></script>
+
+        <script src="{{url_for('static',filename='assets/js/plugins.js')}}"></script>
+        <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+        {% if msg %}
+        <script>alert('{{msg}}')</script>
+        {%endif%}
+    </body>
+</html>
